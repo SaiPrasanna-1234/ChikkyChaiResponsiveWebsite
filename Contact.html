@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+
+
+    <link rel="stylesheet" href="./style1.css">
+    <style>
+        body{
+           background-image: url("./images1/contactus.jpeg");
+           background-size: cover;
+           background-attachment: fixed;
+          background-repeat: no-repeat;
+
+          
+        }
+        .leftbox{
+          background-color: black;
+          border-radius: 50%;
+          margin: 8%;
+        }
+        .contact1{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 60vh;
+          align-items: center;
+        }
+        .content1{
+          padding-bottom: 20px;
+          margin:20px;
+         
+        }
+
+        .bothboxes{
+          display:flex;
+          flex-direction: row;
+         /* background-color:rgb(105, 44, 149);  */
+          border-radius: 5%;
+        }
+        .container1{
+          display:flex;
+          flex-direction: column;
+          padding: 0px 105px;
+          margin-left: 10px;
+        }
+        h2{
+          color:black;
+        }
+        h4{
+          display: inline;
+          color:rgb(152, 90, 197);
+        }
+        .rightbox{
+          display: flex;
+          flex-direction: column;
+          padding: 55px;
+          background-color:rgb(129, 25, 120);
+        }
+        form{
+          padding-top: 20px;
+          padding-right: 50px;
+        }
+        .container1{
+          margin-top: 15px;
+        }
+        .inputbox, h3{
+          padding:5px;
+          color:black;
+        }
+
+         p{
+          font-size:medium;
+          margin-left: -20px;
+          margin-top: -10px;
+          color: azure;
+         }
+         i{
+          background-color: rgb(16, 54, 87);
+          padding: 2px;
+          color: aqua;
+          display: inline;
+         }
+         .rightbox .inputbox input{
+          width:100%;
+          border: none;
+          border-bottom: 2px solid black;
+          background-color:rgb(129, 25, 120);
+          outline: none;
+         }
+         
+         .rightbox .inputbox textarea{
+          background-color:rgb(129, 25, 120);
+          width:100%;
+          border: none;
+          border-bottom: 2px solid black;
+          outline: none;
+         }
+
+         .rightbox .inputbox input[type="submit"]
+         {
+          width:80px;
+          background-color:rgb(14, 10, 13);
+          color: whitesmoke;
+          border-radius:10px;
+          font-size: medium;
+         }
+         @media(max-width:600px)
+         {
+         .bothboxes{
+          display: flex;
+          flex-direction: column;
+         }
+         .rightbox{
+          padding:20px;
+         }
+         }
+        </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="class1">
+    <div class="nav-title"><span>Chikky Chai</span></div>
+    <div class="nav-toggler"></li><i class="fa fa-bars" style="font-size:18px"></i></div>
+    </div>
+    <div class="class2">
+    <div class="nav-ul">
+        <div class="nav-items"><a href="./main.html">Home</a></div>
+        <div class="nav-items"><a href="./Tea.html">Tea</a></div>
+        <div class="nav-items"><a href="./snacks.html">Snacks</a></div>
+        <div class="nav-items"><a href="./beverages.html">Beverages</a></div>
+        <div class="nav-items"><a href="./Contact.html">Contact Us</a></div>
+    </div>
+    </div>
+</div>
+
+<!-- ***************************************** -->
+<section class="contact1">
+        <div class="content1">
+            <h2>Contact Us</h2>
+            <!-- <p>Feel free to contact us</p> -->
+        </div>
+      <div class="bothboxes">
+        <div class="leftbox">
+            <div class="container1">
+                <div class="text1">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <h4>Address</h4>
+                <p>Road No 1/5Banjara Hills, Hyderabad</p>
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="text1">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <h4>Emailid</h4>
+                  <p>saiprasanna56@gmailcom</p>
+              </div>
+            </div>
+
+            <div class="container1">
+                <div class="text1">
+                  <i class="fa fa-phone-square" aria-hidden="true"></i>
+                  <h4>Phone No</h4>
+                  <p>1456-256201</p>
+                </div>
+            </div>
+
+            </div>
+
+        <div class="rightbox">
+          <form>
+            <h3>Send Message</h3>
+            <br>
+              <div class="inputbox">
+                <span>Full Name</span>
+                <input type="text" name="" required="required">
+              </div>
+              <div class="inputbox">
+                <span>Email</span>
+                <input type="text" name="" required="required">
+              </div>
+              <div class="inputbox">
+                <span>Type your Message..</span>
+                <textarea required="required"></textarea>
+              </div>
+              
+              <div class="inputbox">
+                <input type="submit" value="submit">
+              </div>
+          </form>
+        </div>
+        </div>
+
+</section>
+
+
+
+<script src="./index1.js"></script>
+</body>
+</html>
